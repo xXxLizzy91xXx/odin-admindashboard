@@ -6,3 +6,33 @@
     padding: 0;
     font-family: 'Rubik', sans-serif;
 }
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr auto;
+    grid-template-areas: 
+    "sidebar header header header"
+    "sidebar main main main";
+}
+
+header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: brown;
+}
+
+.content {
+    grid-area: main;
+    background-color: coral;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+}

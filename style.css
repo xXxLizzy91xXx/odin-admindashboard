@@ -19,17 +19,33 @@ body {
 
 header {
     grid-area: header;
-    background-color: aqua;
 }
 
 .sidebar {
     grid-area: sidebar;
-    background-color: brown;
+    background-color: #1992D4;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+.dashlogo {
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .content {
     grid-area: main;
-    background-color: coral;
+    background-color: #E2E8F0;
 }
 
 .projects {

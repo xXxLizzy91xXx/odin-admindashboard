@@ -22,6 +22,7 @@ header {
     grid-area: header;
 }
 
+/* HEADER TOP */
 .profilepic {
     border-radius: 50%;
     width: 2rem;
@@ -31,7 +32,7 @@ header {
 .top {
     display: grid;
     grid-template-columns: 1fr max-content;
-    margin: 1.25rem;
+    margin: 2rem;
 }
 
 .noti {
@@ -77,6 +78,45 @@ header {
     border: none;
     margin-right: 1.3rem;
 }
+
+/* HEADER BOTTOM */
+.bottom {
+    margin: 0.6rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.profilepic.two {
+    width: 4rem;
+    height: 4rem;
+}
+
+.hello {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hello .msg{
+    margin-right: 0.5rem;
+}
+
+.btn {
+    background-color: #1992D4;
+    color: white;
+    border: none;
+    border-radius: 0.6rem;
+    width: 4.4rem;
+    height: 1.8rem;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 
 /* SIDEBAR */
 .sidebar {

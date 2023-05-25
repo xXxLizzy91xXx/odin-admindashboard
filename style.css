@@ -167,9 +167,53 @@ a {
 .content {
     grid-area: main;
     background-color: #E2E8F0;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #f0b429;
+    border-radius: 5px;
+}
+
+.title {
+    margin-bottom: 20px;
 }
 
 .projects {
+    font-size: 12px;
+    padding: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 15px;
+}
+
+.announcementcard {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.trendingcard {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profileaccount {
+    display: flex;
+    flex-direction: column;
+}
+
+.profilepicthree {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }

@@ -32,7 +32,7 @@ header {
 .top {
     display: grid;
     grid-template-columns: 1fr max-content;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .noti {
@@ -169,13 +169,11 @@ a {
     background-color: #E2E8F0;
     display: flex;
     gap: 20px;
+    padding: 20px;
 }
 
 .card {
-    background-color: #f0f0f0;
-    padding: 20px;
     border-left: 4px solid #f0b429;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -183,18 +181,14 @@ a {
 
 .title {
     margin-bottom: 10px;
-}
-
-.projects {
-    font-size: 12px;
-    padding: 20px;
+    font-size: 18px;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.8fr 0.8fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr;
-    gap: 15px;
+    gap: 10px;
 }
 
 .actions {
@@ -204,10 +198,19 @@ a {
     margin-top: 20px;
 }
 
-.announcementcard {
-    background-color: #f0f0f0;
+.announcementtitle {
+    margin-bottom: 5px;
+}
+
+.card, .announcementcard, .trendingcard {
+    background-color: white;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.info {
+    margin: 10px 0;
 }
 
 .trendingcard {
@@ -225,4 +228,9 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+.announcementtext, .nametext, .cardtext {
+    color: rgb(151, 151, 151);
+    font-size: 12px;
 }

@@ -10,7 +10,7 @@
 body {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.7fr 1fr 1fr 1fr;
     grid-template-rows: 2fr auto;
     grid-template-areas: 
     "sidebar header header header"
@@ -22,6 +22,61 @@ header {
     grid-area: header;
 }
 
+.profilepic {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    margin: 1.25rem;
+}
+
+.noti {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.3rem;
+}
+
+.noti:hover,
+.searchicon:hover {
+    background-color: #f3f0f0;
+    border-radius: 30%;
+}
+
+.account {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+}
+
+.account .profilepic, .noti {
+    margin-right: 1rem;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.searchbar {
+    background-color: #E2E8F0;
+    border-radius: 0.6rem;
+    border: 0.5px solid lightgray;
+    width: 30rem;
+    height: 1.3rem;
+    padding: 0 40px;
+}
+
+.searchicon {
+    background-color: white;
+    border: none;
+    margin-right: 1.3rem;
+}
 
 /* SIDEBAR */
 .sidebar {
